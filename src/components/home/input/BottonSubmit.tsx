@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 function BottonSubmit() {
+  
   return (
 
     <div className="flex justify-center">
@@ -12,6 +13,7 @@ function BottonSubmit() {
     </div>
 
   );
+  
 }
 
 export default BottonSubmit;
