@@ -1,20 +1,17 @@
-import FormUrl from './input/FromUrl';
-import Navbar from './navbar/Navbar';
-import Templates from './templates/Templates';
+import FormUrl from './form/FromUrl';
+import Templates from './Templates';
 
 function Home() {
 
   return (
 
-    <>
-
-      <Navbar />
+    <main>
 
       <FormUrl />
 
       <Templates />
 
-    </>
+    </main>
 
   );
 

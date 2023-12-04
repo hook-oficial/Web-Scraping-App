@@ -1,22 +1,37 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
 
   return (
-    <>
+    <nav>
+
       <div className="flex flex-wrap rounded-lg shadow-md my-5">
 
         <div className="px-3 mb-6  mx-auto w-11/12 bg-white rounded-xl">
 
-          <div className="sm:flex items-stretch justify-between grow lg:mb-0 py-5 px-5">
+          <div className="sm:flex items-stretch justify-between grow lg:mb-0 py-5">
 
-            <div className="flex my-2 flex-col flex-wrap justify-center mb-5 mr-3 lg:mb-0">
+            <div className="flex my-2 flex-row items-center mb-5 mr-3 lg:mb-0">
 
-              <span className="my-0 flex text-dark font-semibold text-[1.35rem]/[1.2] flex-col justify-center">
-                Web Scrapy
-              </span>
+              {/* 
+                <img src={hookIcon} alt="Software Company: Hook" className="rounded-full h-16 w-16 object-cover mr-2" />
+              */}
 
-              <span className="pt-1 text-secondary-dark text-[0.95rem] font-medium">
-                App For Web Scraping
-              </span>
+              <Link to="/">
+
+                <div className="flex flex-col ml-2 px-1">
+
+                  <span className="my-0 text-dark font-semibold text-[1.35rem]/[1.2] flex-col justify-center">
+                    Web Scrapy
+                  </span>
+
+                  <span className="pt-1 text-secondary-dark text-[0.95rem] font-medium">
+                    App For Web Scraping
+                  </span>
+
+                </div>
+
+              </Link>
 
             </div>
 
@@ -43,8 +58,8 @@ function Navbar() {
         </div>
 
       </div>
-    </>
 
+    </nav>
   );
 
 }
