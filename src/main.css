@@ -1,33 +1,7 @@
-/* main.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #757272;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: #D1D5DB;
-}
-
-body {
-  scrollbar-width: thin;
-  scrollbar-color: #757272 #D1D5DB;
-}
-
-body {
-  -ms-overflow-style: none; 
-}
-
-body::-ms-scrollbar-thumb {
-  background-color: #757272;
-}
-
-body::-ms-scrollbar-track {
-  background-color: #D1D5DB;
+:root{
+  color-scheme: light dark;
 }
