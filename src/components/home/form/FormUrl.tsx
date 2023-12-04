@@ -1,10 +1,9 @@
-import BottonSubmit from "./BottonSubmit";
 
 function FormUrl() {
 
   return (
 
-    <form className="max-w-sm mx-auto rounded-lg shadow-xl overflow-hidden p-6 space-y-10 m-10">
+    <form className="mx-auto rounded-lg shadow-xl overflow-hidden p-6 space-y-10 m-10">
 
       <p className="text-center font-bold text-2xl text-neutral-700">You can use 1 url at a time.</p>
 
@@ -15,8 +14,6 @@ function FormUrl() {
         <span className="material-symbols-outlined pointer-events-none mx-2">Link</span>
 
       </div>
-
-      <BottonSubmit />
 
     </form>
 

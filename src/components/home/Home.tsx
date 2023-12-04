@@ -1,4 +1,4 @@
-import FormUrl from './form/FromUrl';
+import FormUrl from './form/FormUrl';
 import Templates from './Templates';
 
 function Home() {
