@@ -1,23 +1,26 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './components/home/Home';
-import DefaultTemplate from "./components/template/default/DefaultTemplate";
+import Navbar from "./components/navbar/Navbar";
+import TemplateDefault from "./components/template/default/TemplateDefault";
 
 function App() {
-  
+
   return (
-  
-  <BrowserRouter>
-  
+
+    <BrowserRouter>
+
+      <Navbar />
+
       <Routes>
-  
+
         <Route path="/" element={<Home />} />
-  
-        <Route path="/default-template" element={<DefaultTemplate />} />
+
+        <Route path="/default-template" element={<TemplateDefault />} />
 
       </Routes>
-  
+
     </BrowserRouter>
-  
+
   );
 
 }
